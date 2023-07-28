@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>基本财务指标</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <h1>Generate Images</h1>
+    <form action="/generate_images" method="POST">
+        <label for="input_string">Input String:</label>
+        <input type="text" id="input_string" name="input_string" value="SZ002014">
+        <br>
+        <input type="submit" value="Generate">
+    </form>
+    <hr>
+    <img src="" id="img1">
+    <img src="" id="img2">
+    <img src="" id="img3">
+    <img src="" id="img4">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
